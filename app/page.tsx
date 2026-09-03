@@ -29,7 +29,10 @@ export default function Home() {
     </section>
     <footer className="replica-footer" id="contact">
       <div><a href="mailto:info@nanna.com.tr">info@nanna.com.tr</a><span>{t.place}</span></div>
-      <div className="socials"><a href="https://www.instagram.com/nannatufting" aria-label="Instagram">ig</a><a href="https://www.facebook.com/nannatufting" aria-label="Facebook">f</a></div>
+      <div className="socials">
+        <a href="https://www.instagram.com/nannatufting" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.25"/><circle className="icon-dot" cx="17.4" cy="6.7" r="1"/></svg></a>
+        <a href="https://www.facebook.com/nannatufting" aria-label="Facebook"><svg className="facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 21v-8h2.8l.45-3.2H13.7V7.75c0-.93.28-1.56 1.63-1.56H17V3.32A22 22 0 0 0 14.55 3c-2.43 0-4.1 1.48-4.1 4.2v2.6H7.7V13h2.75v8h3.25Z"/></svg></a>
+      </div>
       <small>© 2026 Nanna. All rights reserved.</small>
     </footer>
   </main>;
