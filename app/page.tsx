@@ -19,8 +19,8 @@ export default function Home() {
         {t.nav.map((item, i) => <a className={i === 0 ? 'selected' : ''} href={i === 0 ? '#top' : '#contact'} onClick={() => setOpen(false)} key={item}>{item}</a>)}
       </nav>
       <div className="lang-pill" aria-label="Dil seçimi">
-        <button className={lang === 'tr' ? 'active' : ''} onClick={() => setLang('tr')}><span>🇹🇷</span> TR</button>
-        <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}><span>🇬🇧</span> EN</button>
+        <button className={lang === 'tr' ? 'active' : ''} onClick={() => setLang('tr')} aria-label="Türkçe"><span>🇹🇷</span></button>
+        <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')} aria-label="English"><span>🇬🇧</span></button>
       </div>
     </header>
     <section className="centerpiece" id="top">
